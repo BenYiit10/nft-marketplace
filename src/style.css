@@ -1,3 +1,18 @@
+.page-container {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 1366px) {
+  .page-container {
+    width: 84%;
+  }
+}
+@media (max-width: 768px) {
+  .page-container {
+    width: 95%;
+  }
+}
+
 body {
   font-family: "Urbanist";
   background-color: #19191D;

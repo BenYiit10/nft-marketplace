@@ -1,11 +1,17 @@
-import React from 'react'
-import Header from './Header'
+import React from "react";
+import { useDispatch } from "react-redux";
+import { setIsThere } from "../redux/reducer";
+import Header from "./Header";
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
+  const dispatch = useDispatch()
+
+  dispatch(setIsThere(true))
+
   return (
-    <>
-        <Header/>
-        {children}
-    </>
-  )
+    <div className="text-white">
+      <Header/>
+      {children}
+    </div>
+  );
 }

@@ -1,20 +1,13 @@
-import React from 'react'
-/* import 'swiper/css';
-import { Swiper, SwiperSlide } from 'swiper/react';
- */
+import React from "react";
+import HeroSection from "../components/HeroSection";
+import Category from "../components/Category";
+
 export default function Home() {
-    return (
-        <>
-            {/* <Swiper
-              spaceBetween={10}
-              slidesPerView={2}
-            >
-              <SwiperSlide>za</SwiperSlide>
-              <SwiperSlide>za2</SwiperSlide>
-              <SwiperSlide>za4</SwiperSlide>
-              <SwiperSlide>za4</SwiperSlide>
-              <SwiperSlide>za4</SwiperSlide>
-            </Swiper> */}
-        </>
-    )
+
+  return (
+    <>
+      <HeroSection className="bg-[#14141F] "/>
+      <Category/>
+    </>
+  );
 }

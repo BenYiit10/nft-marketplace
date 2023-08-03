@@ -1,5 +1,16 @@
 $urbanist: "Urbanist";
 
+.page-container {
+    width: 80%;
+    margin: auto;
+    @media (max-width:1366px) {
+        width: 84%;
+    }
+    @media (max-width:768px) {
+        width: 95%;
+    }
+}
+
 body {
     font-family: $urbanist;
     background-color: #19191D;

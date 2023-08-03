@@ -1,13 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { BsSearch } from "react-icons/bs";
 import { HiMoon, HiBars3BottomLeft} from "react-icons/hi2";
 import HeaderLink from './HeaderLink';
 
 
 export default function Header() {
+
+    const location = useLocation();
+
+    const [isAbsolute,setIsAbsolute] = useState(false)
+    useEffect(() => {
+        if (location.pathname !== "/") {
+            setIsAbsolute(true)
+        }
+    },[location])
+
+
     return (
-        <header className='py-8 bg-[#14141F]'>
+        <header className={`py-8 bg-[#14141F] ${isAbsolute&&'absolute w-full'}`}>
             <div className='px-[85px] max-[1280px]:px-[42px] max-[1024px]:px-[30px] flex justify-between items-center gap-4 max-lg:gap-2 '>
                 <div className='header-start flex gap-4 max-[1440px]:gap-6 max-[1300px]:gap-4 items-center w-2/5 max-[1200px]:w-2/6 max-lg:justify-between max-lg:w-full'>
                     <Link to={"/"} className='text-white text-[48px] max-2xl:text-[40px] max-[1200px]:text-[32px] font-[700]'>
