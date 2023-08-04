@@ -3,10 +3,10 @@ import { createSlice } from '@reduxjs/toolkit'
 export const mainReducer = createSlice({
     name: 'main',
     initialState:{
-        isThere:true  
+        isThere:true
     },
     reducers: {
-        setIsThere: (state,action) => {state.isThere = action.payload}
+        setIsThere: (state,action) => {state.isThere = action.payload},
     },
 })
 
