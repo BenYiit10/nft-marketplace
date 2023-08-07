@@ -7,7 +7,6 @@ import nftVert from "../assets/nftHorizontal.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SectionTitle from '../ui/SectionTitle'
-import SwiperNavigate from '../ui/SwiperNavigate'
 
 export default function Category() {
     
@@ -36,7 +35,7 @@ export default function Category() {
         <div className='page-container'>
             <SectionTitle title="Brow By Category" />        
         </div>
-        <div className='relative mt-8 ml-auto w-[90%] max-1xl:w-[92%] max-mdd:w-[97%]'>
+        <div className='relative ml-auto w-[90%] max-1xl:w-[92%] max-mdd:w-[97%]'>
             <Swiper /* !ml-[10%] max-1xl:!ml-[8%] max-mdd:!ml-[2.5%] */
             
                 slidesPerView={1.4}
@@ -70,8 +69,8 @@ export default function Category() {
                     <CategoryItem src={nftVert} title="Music" />
                 </SwiperSlide>
 
-                <SwiperNavigate left />
-                <SwiperNavigate right />
+                {/* <SwiperNavigate left />
+                <SwiperNavigate right /> */}
 
             </Swiper>
        

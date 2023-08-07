@@ -6,7 +6,7 @@ import bitcoin from "../assets/bitcoin.png";
 import hands from "../assets/hands.png";
 import nft from "../assets/nft.png";
 import HeaderImgContainer from "./HeaderImgContainer"
-import ImgContainer from "./ImgContainer"
+import ImgContainer from "../ui/ImgContainer"
 
 export default function HeroSection({className}) {
     return (

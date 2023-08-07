@@ -16,4 +16,28 @@
 body {
   font-family: "Urbanist";
   background-color: #14141F;
+}
+
+@media (max-width: 540px) {
+  .sectionTitle {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+.card-content .card-detail {
+  grid-template-columns: auto 1fr;
+}
+.card-content .card-name {
+  @apply h-full;
+}
+
+.seller {
+  grid-template-columns: auto 1fr;
+}
+
+.seller-shadow {
+  left: -7%;
+  top: 15%;
+  box-shadow: 50px 0px 150px 240px rgba(211, 223, 157, 0.4);
 }/*# sourceMappingURL=style.css.map */

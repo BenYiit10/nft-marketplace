@@ -11,9 +11,40 @@ $urbanist: "Urbanist";
     @media (max-width:768px) {
         width: 95%;
     }
+    
 }
 
 body {
     font-family: $urbanist;
     background-color: #14141F;
+}
+.sectionTitle {
+    @media (max-width:540px) {
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+.card-content {
+
+    .card-detail {
+        grid-template-columns: auto 1fr;
+    }
+
+    .card-name {
+    
+        @apply
+        h-full
+    }
+}
+
+.seller {
+
+    grid-template-columns: auto 1fr;
+}
+
+.seller-shadow {
+    left: -7%;
+    top: 15%;
+    box-shadow: 50px 0px 150px 240px rgba(211, 223, 157, 0.40);
+    //box-shadow:inset 50px 0px 150px 220px rgba(211, 223, 157, 0.40);
 }
