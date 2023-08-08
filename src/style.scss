@@ -17,6 +17,7 @@ $urbanist: "Urbanist";
 body {
     font-family: $urbanist;
     background-color: #14141F;
+    color: white;
 }
 .sectionTitle {
     @media (max-width:540px) {
@@ -47,4 +48,18 @@ body {
     top: 15%;
     box-shadow: 50px 0px 150px 240px rgba(211, 223, 157, 0.40);
     //box-shadow:inset 50px 0px 150px 220px rgba(211, 223, 157, 0.40);
+}
+
+.walletItem svg{
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    .page-container {
+
+        @media (max-width:640px) {
+            grid-template-columns: repeat(2,auto);
+        }
+    }
 }

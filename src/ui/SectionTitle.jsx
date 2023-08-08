@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { setClicked } from '../redux/reducer'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -7,10 +7,6 @@ export default function SectionTitle({title, more, tab, tabText}) {
   const dispatch = useDispatch()
 
   const clicked = useSelector(state => state.reducer.clicked)
-
-  useEffect(() => {
-    console.log(clicked)
-  },[clicked])
 
   return (
     <div className='sectionTitle relative flex justify-between items-end gap-4 mb-8'>
@@ -28,8 +24,8 @@ export default function SectionTitle({title, more, tab, tabText}) {
           {
             tabText.map((item,index) => {
                 return (
-                    <button key={index} onClick={() => dispatch(setClicked(index))} className={`rounded-full px-5 py-1 max-sm:text-xs max-sm:px-3 max-sm:py-1
-                      ${clicked===index ? "bg-purple-600" : "border border-1 border-purple-600"}
+                    <button key={index} onClick={() => dispatch(setClicked(index))} className={`rounded-full px-5 py-1 max-sm:text-xs max-sm:px-3 max-sm:py-1 border border-1 border-purple-600
+                      ${clicked===index && "bg-purple-600"}
                     `}>
                       {item}
                     </button>

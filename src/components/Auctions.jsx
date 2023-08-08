@@ -1,17 +1,14 @@
-import React/* , { useRef } */ from 'react'
+import React from 'react'
 import SectionTitle from '../ui/SectionTitle'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import AuctionCard from './AuctionCard'
 import SwiperNavigate from '../ui/SwiperNavigate';
-//import useSwiperRef from '../ui/useSwiperRef';
-//import { SwiperProvider } from './SwiperContext';
+import { Navigation } from 'swiper/modules';
 
 export default function Auctions() {
     
-    /* const swiperRef = useSwiperRef(); */
-
-    const swiperSetinngs = {
+    const swiperSettings = {
         breakpoints: {
             420: {
               slidesPerView: 1,
@@ -35,16 +32,20 @@ export default function Auctions() {
             <section className="mt-[92px] mb-[69px]">
                 <div className='page-container'>
                     <SectionTitle title="Live Auctions" more/>
-                    <div>
                     <div className='relative'>
 
                         <Swiper
-                            className='max-mdd:w-3/4'
-                            /* ref={swiperRef} */
+                            className='zort max-mdd:w-3/4'
+                            
                             slidesPerView={1}
                             spaceBetween={71}
+                            navigation={{
+                                nextEl:".auctionsRight",
+                                prevEl:".auctionsLeft",
+                            }}
+                            modules={[Navigation]}
 
-                            {...swiperSetinngs}
+                            {...swiperSettings}
                         >
                             <SwiperSlide>
                                 <AuctionCard />
@@ -61,12 +62,8 @@ export default function Auctions() {
 
                         </Swiper> 
 
-                        <SwiperNavigate left />
-                        <SwiperNavigate right />
-                        
-                        
-
-                    </div>
+                        <SwiperNavigate className="auctionsLeft" left />
+                        <SwiperNavigate className="auctionsRight" right />
                     </div>
                 </div>
             </section>

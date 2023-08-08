@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useDispatch } from "react-redux";
 import { setIsThere } from "../redux/reducer";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   const dispatch = useDispatch()
@@ -9,9 +10,12 @@ export default function Layout({ children }) {
   dispatch(setIsThere(true))
 
   return (
-    <div className="text-white">
+    <Fragment>
       <Header/>
-      {children}
-    </div>
+      <main>
+        {children}
+      </main>
+      <Footer/>
+    </Fragment>
   );
 }
