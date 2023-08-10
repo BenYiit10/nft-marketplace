@@ -18,6 +18,7 @@ body {
     font-family: $urbanist;
     background-color: #14141F;
     color: white;
+    overflow-x:hidden ;
 }
 .sectionTitle {
     @media (max-width:540px) {
@@ -25,10 +26,26 @@ body {
         align-items: baseline;
     }
 }
-.card-content {
+.auctionCard .card-content {
 
     .card-detail {
         grid-template-columns: auto 1fr;
+    }
+
+    .card-name {
+    
+        @apply
+        h-full
+    }
+}
+.todaysPickCard .card-content {
+
+    .card-detail {
+        grid-template-columns: 1fr;
+        
+        & > div:first-child {
+            grid-template-columns:auto 1fr;
+        }
     }
 
     .card-name {
@@ -62,4 +79,25 @@ footer {
             grid-template-columns: repeat(2,auto);
         }
     }
+}
+
+.todaysPickTab{
+
+    &::-webkit-scrollbar {
+        height: 3px;
+    }
+      
+      /* Track */
+    
+       
+      /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: rgb(147 51 234); 
+      
+      }
+      
+      /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgb(126, 42, 204); 
+      }
 }

@@ -12,7 +12,7 @@ export default function AuctionCard() {
     const [isTouch,setIsTouch] = useState(false)
 
   return (
-    <div className='flex flex-col'>
+    <div className='auctionCard flex flex-col'>
         <Link to="#">
             <div className='card-image relative'>
                 <ImgContainer src={handsVert} className="w-full" />

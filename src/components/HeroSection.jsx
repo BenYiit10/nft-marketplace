@@ -9,6 +9,7 @@ import HeaderImgContainer from "./HeaderImgContainer"
 import ImgContainer from "../ui/ImgContainer"
 
 export default function HeroSection({className}) {
+    
     return (
         <section className={`pt-32 pb-16 max-md:pt-20 max-md:pb-12 overflow-hidden ${className}`}>
             <div className="relative flex page-container ">
@@ -31,7 +32,7 @@ export default function HeroSection({className}) {
                     <img src={bubbles} alt="bubbles_pattern" className='absolute -top-12 -left-20 max-w-fit z-0 4xl:scale-110 max-lg:rotate-180'/>
 
                 </article>
-                <figure className='absolute right-0 top-0 flex gap-[62px] translate-x-[54%] -translate-y-[35%] z-[10] max-md:w-max max-md:rotate-[80deg] max-md:translate-x-1/4 max-md:translate-y-1/4' >
+                <figure className='absolute right-0 top-0 flex gap-[62px] translate-x-[54%] -translate-y-[35%] z-[10] w-max max-md:rotate-[80deg] max-md:translate-x-1/3 max-md:translate-y-[20%]' >
                     <HeaderImgContainer>
                         <ImgContainer src={hands} />
                         <ImgContainer src={nft} />

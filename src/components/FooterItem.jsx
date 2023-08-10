@@ -12,7 +12,7 @@ export default function FooterItem({title,content}) {
                     content.map((item,index) => {
                         return(
                         <Link to={item.link}  key={index}>
-                            <li className='font-normal text-xs 3xl:text-sm 4xl:text-base 5xl:text-lg' >{item.title}</li>
+                            <li className='font-normal text-xs 3xl:text-sm 4xl:text-base 5xl:text-lg hover:text-slate-300' >{item.title}</li>
                         </Link>
                             )
                     } )

@@ -18,7 +18,7 @@ export default function Sellers() {
                 
                 <TabContainer>
                     <SellerContainer>
-                        <SellerItem />
+                        <SellerItem key={1} />
                         <SellerItem />
                         <SellerItem />
                         <SellerItem />

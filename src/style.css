@@ -17,6 +17,7 @@ body {
   font-family: "Urbanist";
   background-color: #14141F;
   color: white;
+  overflow-x: hidden;
 }
 
 @media (max-width: 540px) {
@@ -26,10 +27,20 @@ body {
   }
 }
 
-.card-content .card-detail {
+.auctionCard .card-content .card-detail {
   grid-template-columns: auto 1fr;
 }
-.card-content .card-name {
+.auctionCard .card-content .card-name {
+  @apply h-full;
+}
+
+.todaysPickCard .card-content .card-detail {
+  grid-template-columns: 1fr;
+}
+.todaysPickCard .card-content .card-detail > div:first-child {
+  grid-template-columns: auto 1fr;
+}
+.todaysPickCard .card-content .card-name {
   @apply h-full;
 }
 
@@ -52,4 +63,19 @@ body {
   footer .page-container {
     grid-template-columns: repeat(2, auto);
   }
+}
+
+.todaysPickTab {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.todaysPickTab::-webkit-scrollbar {
+  height: 3px;
+}
+.todaysPickTab::-webkit-scrollbar-thumb {
+  background: rgb(147, 51, 234);
+}
+.todaysPickTab::-webkit-scrollbar-thumb:hover {
+  background: rgb(126, 42, 204);
 }/*# sourceMappingURL=style.css.map */

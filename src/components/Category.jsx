@@ -7,6 +7,7 @@ import nftVert from "../assets/nftHorizontal.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SectionTitle from '../ui/SectionTitle'
+import { Link } from 'react-router-dom'
 
 export default function Category() {
     
@@ -45,28 +46,44 @@ export default function Category() {
                 
             >
                 <SwiperSlide>
-                    <CategoryItem src={nftVert} title="Music" />
+                    <Link to="#">
+                        <CategoryItem src={nftVert} title="Music" />
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Link to="#">
                     <CategoryItem src={handsVert} title="Domain Name" />
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Link to="#">
                     <CategoryItem src={nftVert} title="Music" />
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Link to="#">
                     <CategoryItem src={bitcoinVert} title="Arts" />
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Link to="#">
                     <CategoryItem src={nftVert} title="Utility" />
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Link to="#">
                     <CategoryItem src={nftVert} title="Music" />
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Link to="#">
                     <CategoryItem src={handsVert} title="zort" />
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <Link to="#">
                     <CategoryItem src={nftVert} title="Music" />
+                    </Link>
                 </SwiperSlide>
 
                 {/* <SwiperNavigate left />

@@ -12,9 +12,9 @@ export default function TodaysPickTab({icon,content}) {
     }
 
     return (
-        <div onClick={changeTab} className={`flex items-center gap-4 px-4 py-[5px] rounded-full border border-1 border-purple-600 ${content[0].index === todaysPickTabIndex && "bg-purple-600"}`}>
+        <div onClick={changeTab} className={`flex items-center gap-4 px-4 py-[5px] w-max backdrop-blur-sm rounded-full border border-1 border-purple-600 cursor-pointer select-none ${content[0].index === todaysPickTabIndex && "bg-purple-600"}`}>
             {icon}
-            <p className='font-semibold'>{content[0].title}</p>
+            <p className='font-semibold w-max'>{content[0].title}</p>
         </div>
     )
 }
