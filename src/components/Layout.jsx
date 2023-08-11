@@ -5,17 +5,17 @@ import Header from "./home/Header";
 import Footer from "./home/Footer";
 
 export default function Layout({ children }) {
-  const dispatch = useDispatch()
+    const dispatch = useDispatch()
 
-  dispatch(setIsThere(true))
+    dispatch(setIsThere(true))
 
-  return (
-    <Fragment>
-      <Header/>
-      <main>
-        {children}
-      </main>
-      <Footer/>
-    </Fragment>
-  );
+    return (
+        <Fragment>
+            <Header/>
+                <main>
+                    {children}
+                </main>
+            <Footer/>
+        </Fragment>
+    );
 }

@@ -4,7 +4,7 @@ import ImgContainer from "../../ui/ImgContainer"
 
 import anvil from "../../assets/anvil.png"
 import {Swiper,SwiperSlide} from 'swiper/react'
-import CollectionItem from './CollectionImage'
+import CollectionItem from './CollectionItem'
 
 import SwiperNavigate from "../../ui/SwiperNavigate"
 import { Navigation } from 'swiper/modules'
