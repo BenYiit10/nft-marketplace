@@ -20,6 +20,11 @@ body {
     color: white;
     overflow-x:hidden ;
 }
+
+button,a{
+    user-select: none;
+}
+
 .sectionTitle {
     @media (max-width:540px) {
         flex-direction: column;
