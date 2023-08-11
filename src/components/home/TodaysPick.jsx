@@ -1,7 +1,7 @@
 import React from "react";
-import SectionTitle from "../ui/SectionTitle";
+import SectionTitle from "../../ui/SectionTitle";
 import TodaysPickTab from "./TodaysPickTab";
-import { Squares, SortMenuIcon } from "../ui/Icon";
+import { Squares, SortMenuIcon } from "../../ui/Icon";
 import TodaysPickCard from "./TodaysPickCard";
 import TodaysPickTabIndexTabContainer from "./TodaysPickTabIndexTabContainer";
 import TodaysPickContainer from "./TodaysPickContainer";

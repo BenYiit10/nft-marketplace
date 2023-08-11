@@ -1,6 +1,6 @@
 import React from 'react'
 import WalletItem from './WalletItem'
-import { Squares,Gallery,WalletSVG,Bookmark } from '../ui/Icon'
+import { Squares,Gallery,WalletSVG,Bookmark } from '../../ui/Icon'
 
 export default function Wallet() {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
-import ImgContainer from '../ui/ImgContainer'
+import ImgContainer from '../../ui/ImgContainer'
 
-import nftCollection from "../assets/nftCollection.png"
-import bitcoinCollection from "../assets/bitcoinCollection.png"
-import handsCollection from "../assets/handsCollection.png"
-import circleProfile from "../assets/circle-profile.png"
-import {Tick} from "../ui/Icon"
+import nftCollection from "../../assets/nftCollection.png"
+import bitcoinCollection from "../../assets/bitcoinCollection.png"
+import handsCollection from "../../assets/handsCollection.png"
+import circleProfile from "../../assets/circle-profile.png"
+import {Tick} from "../../ui/Icon"
 import { Link } from 'react-router-dom'
 export default function CollectionItem() {
     return (

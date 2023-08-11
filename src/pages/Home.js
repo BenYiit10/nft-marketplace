@@ -1,11 +1,11 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
-import Category from "../components/Category";
-import Auctions from "../components/Auctions";
-import Sellers from "../components/Sellers";
-import Collection from "../components/Collection";
-import Wallet from "../components/Wallet";
-import TodaysPick from "../components/TodaysPick";
+import HeroSection from "../components/home/HeroSection";
+import Category from "../components/home/Category";
+import Auctions from "../components/home/Auctions";
+import Sellers from "../components/home/Sellers";
+import Collection from "../components/home/Collection";
+import Wallet from "../components/home/Wallet";
+import TodaysPick from "../components/home/TodaysPick";
 
 export default function Home() {
 

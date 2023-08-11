@@ -1,9 +1,9 @@
 import React from 'react'
-import SectionTitle from '../ui/SectionTitle'
+import SectionTitle from '../../ui/SectionTitle'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import AuctionCard from './AuctionCard'
-import SwiperNavigate from '../ui/SwiperNavigate';
+import SwiperNavigate from '../../ui/SwiperNavigate';
 import { Navigation } from 'swiper/modules';
 
 export default function Auctions() {

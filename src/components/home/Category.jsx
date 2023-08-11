@@ -1,12 +1,12 @@
 import React from 'react'
 import CategoryItem from './CategoryItem'
 
-import handsVert from "../assets/handsHorizontal.png"
-import bitcoinVert from "../assets/bitcoinHorizontal.png"
-import nftVert from "../assets/nftHorizontal.png"
+import handsVert from "../../assets/handsHorizontal.png"
+import bitcoinVert from "../../assets/bitcoinHorizontal.png"
+import nftVert from "../../assets/nftHorizontal.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import SectionTitle from '../ui/SectionTitle'
+import SectionTitle from '../../ui/SectionTitle'
 import { Link } from 'react-router-dom'
 
 export default function Category() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { setTodaysPickTabIndex } from '../redux/reducer';
+import { setTodaysPickTabIndex } from '../../redux/reducer';
 
 export default function TodaysPickTab({icon,content}) {
 

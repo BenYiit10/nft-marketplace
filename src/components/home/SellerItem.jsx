@@ -1,9 +1,9 @@
 import React from 'react'
-import ImgContainer from '../ui/ImgContainer'
-import circleProfile from "../assets/circle-profile.png"
+import ImgContainer from '../../ui/ImgContainer'
+import circleProfile from "../../assets/circle-profile.png"
 
 import { Link } from 'react-router-dom'
-import { Tick } from "../ui/Icon"
+import { Tick } from "../../ui/Icon"
 export default function SellerItem() {
     return (
       <Link to="#">

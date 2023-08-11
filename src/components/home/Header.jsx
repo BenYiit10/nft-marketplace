@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import { HiMoon, HiBars3BottomLeft } from "react-icons/hi2";
-import HeaderLink from "../ui/HeaderLink";
+import HeaderLink from "../../ui/HeaderLink";
 
 export default function Header() {
   const [dropdown, setDropdown] = useState(false);

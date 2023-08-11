@@ -1,10 +1,10 @@
 import React from 'react'
-import SectionTitle from "../ui/SectionTitle"
+import SectionTitle from "../../ui/SectionTitle"
 import SellerItem from './SellerItem'
 import TabContainer from './TabContainer'
 import SellerContainer from './SellerContainer'
-import monalisa from "../assets/monalisa.png"
-import ImgContainer from '../ui/ImgContainer'
+import monalisa from "../../assets/monalisa.png"
+import ImgContainer from '../../ui/ImgContainer'
 export default function Sellers() {
 
     return (

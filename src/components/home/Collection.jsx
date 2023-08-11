@@ -1,12 +1,12 @@
 import React from 'react'
-import SectionTitle from "../ui/SectionTitle"
-import ImgContainer from "../ui/ImgContainer"
+import SectionTitle from "../../ui/SectionTitle"
+import ImgContainer from "../../ui/ImgContainer"
 
-import anvil from "../assets/anvil.png"
+import anvil from "../../assets/anvil.png"
 import {Swiper,SwiperSlide} from 'swiper/react'
 import CollectionItem from './CollectionImage'
 
-import SwiperNavigate from "../ui/SwiperNavigate"
+import SwiperNavigate from "../../ui/SwiperNavigate"
 import { Navigation } from 'swiper/modules'
 
 export default function Collection() {

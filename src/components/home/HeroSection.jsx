@@ -1,12 +1,12 @@
 import React from 'react';
-import Button from '../ui/Button';
+import Button from '../../ui/Button';
 
-import bubbles from "../assets/bubbles.png";
-import bitcoin from "../assets/bitcoin.png";
-import hands from "../assets/hands.png";
-import nft from "../assets/nft.png";
+import bubbles from "../../assets/bubbles.png";
+import bitcoin from "../../assets/bitcoin.png";
+import hands from "../../assets/hands.png";
+import nft from "../../assets/nft.png";
 import HeroImgContainer from "./HeroImgContainer"
-import ImgContainer from "../ui/ImgContainer"
+import ImgContainer from "../../ui/ImgContainer"
 
 export default function HeroSection({className}) {
     

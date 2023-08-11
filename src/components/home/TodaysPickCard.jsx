@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import ImgContainer from '../ui/ImgContainer'
+import ImgContainer from '../../ui/ImgContainer'
 import { HiOutlineHeart, HiHeart } from 'react-icons/hi2'
-import handsVert from "../assets/handsHorizontal.png"
-import { Icon } from '../ui/Icon'
-import profile from "../assets/profile.png"
+import handsVert from "../../assets/handsHorizontal.png"
+import { Icon } from '../../ui/Icon'
+import profile from "../../assets/profile.png"
 
 export default function TodaysPickCard({detail}) {
 

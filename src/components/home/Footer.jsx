@@ -1,5 +1,5 @@
 import React from "react";
-import { Copyright, Send } from "../ui/Icon";
+import { Copyright, Send } from "../../ui/Icon";
 import { SiFacebook, SiYoutube, SiInstagram, SiTwitter } from "react-icons/si";
 import FooterItem from "./FooterItem";
 import { Link } from "react-router-dom";
