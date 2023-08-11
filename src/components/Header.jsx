@@ -51,7 +51,7 @@ export default function Header() {
             >
                 Logo
             </Link>
-            <form className="search border border-1 rounded-full flex items-center gap-4 py-4 max-[1200px]:py-3 px-6 w-full">
+            <form className="search border border-1 rounded-full flex items-center gap-4 py-4 hover:border-slate-300 max-[1200px]:py-3 px-6 w-full">
                 <BsSearch className="text-white text-2xl" />
                 <input
                 type="text"
@@ -86,12 +86,12 @@ export default function Header() {
                 <HeaderLink>Contacts</HeaderLink> */}
             </div>
             <div className="flex gap-6 items-center max-[1440px]:gap-4">
-                <div className="rounded-full bg-[#343444] w-8 h-8 flex justify-center items-center cursor-pointer">
+                <div className="rounded-full bg-[#343444] w-8 h-8 flex justify-center items-center cursor-pointer hover:bg-[#2a2a38]">
                 <HiMoon className="text-[19px]" />
                 </div>
                 <Link
                 to="/"
-                className="wallet px-6 py-4 max-[1440px]:py-3 border border-purple-600 rounded-full cursor-pointer max-[1440px]:text-[12px] w-max max-lg:px-5"
+                className="wallet px-6 py-4 max-[1440px]:py-3 border border-purple-600 rounded-full cursor-pointer hover:text-slate-300 hover:border-purple-900 max-[1440px]:text-[12px] w-max max-lg:px-5"
                 >
                 Connect Wallet
                 </Link>

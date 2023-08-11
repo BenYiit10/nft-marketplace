@@ -20,10 +20,8 @@ body {
   overflow-x: hidden;
 }
 
-button, a {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+button, a, select {
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 540px) {
@@ -31,6 +29,14 @@ button, a {
     flex-direction: column;
     align-items: baseline;
   }
+}
+
+.auctionCard:hover .card-content {
+  background-color: #2a2a38;
+}
+
+.collectionItem:hover {
+  background-color: #2a2a38;
 }
 
 .auctionCard .card-content .card-detail {

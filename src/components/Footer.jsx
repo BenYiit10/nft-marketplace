@@ -95,22 +95,22 @@ export default function Footer() {
                 type="text"
                 className="text-xs 3xl:text-sm 4xl:text-base 5xl:text-lg w-full text-slate-500 outline-0 pl-2"
               />
-              <button className="bg-purple-600 py-2 px-3">
+              <button className="bg-purple-600 hover:bg-purple-900 py-2 px-3">
                 <Send strokeWidth="0.2" />
               </button>
             </form>
             <div className="flex gap-4 text-[#CEC7C7]">
               <Link to="#">
-                <SiFacebook className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 5xl:w-7 5xl:h-7" />
+                <SiFacebook className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 5xl:w-7 5xl:h-7 hover:text-[#b5b0b0]" />
               </Link>
               <Link to="#">
-                <SiYoutube className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 5xl:w-7 5xl:h-7" />
+                <SiYoutube className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 5xl:w-7 5xl:h-7 hover:text-[#b5b0b0]" />
               </Link>
               <Link to="#">
-                <SiInstagram className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 5xl:w-7 5xl:h-7" />
+                <SiInstagram className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 5xl:w-7 5xl:h-7 hover:text-[#b5b0b0]" />
               </Link>
               <Link to="#">
-                <SiTwitter className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 5xl:w-7 5xl:h-7" />
+                <SiTwitter className="3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 5xl:w-7 5xl:h-7 hover:text-[#b5b0b0]" />
               </Link>
             </div>
           </div>

@@ -7,7 +7,7 @@ import { Tick } from "../ui/Icon"
 export default function SellerItem() {
     return (
       <Link to="#">
-        <div className='seller bg-[#343444] py-[10px] px-4 rounded-[10px] grid gap-4 font-bold items-center max-sm:py-2 max-sm:px-3 max-sm:gap-3'>
+        <div className='seller bg-[#343444] hover:bg-[#2a2a38] py-[10px] px-4 rounded-[10px] grid gap-4 font-bold items-center max-sm:py-2 max-sm:px-3 max-sm:gap-3'>
             <div className='relative seller-profile'>
               <ImgContainer src={circleProfile} className="3xl:w-16 3xl:h-16 4xl:w-20 4xl:h-20 5xl:w-24 5xl:h-24" />
               <Tick className="absolute right-0 bottom-0 4xl:w-5 4xl:h-5 5xl:w-6 5xl:h-6" />

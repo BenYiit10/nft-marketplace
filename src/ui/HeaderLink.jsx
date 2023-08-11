@@ -45,7 +45,7 @@ export default function HeaderLink({
     return (
         <div className="relative">
         <div
-            className={`relative flex gap-3 max-[1440px]:gap-2 items-center cursor-pointer text-[20px] max-[1530px]:text-[18px] max-[1440px]:text-[16px] max-[1200px]:text-[14px] select-none ${className}`}
+            className={`relative flex gap-3 max-[1440px]:gap-2 items-center cursor-pointer text-[20px] max-[1530px]:text-[18px] max-[1440px]:text-[16px] max-[1200px]:text-[14px] hover:text-slate-300 select-none ${className}`}
             onClick={() => setActiveDropdownIdx(isDropdownActive ? null : index)}
         >
             {children}

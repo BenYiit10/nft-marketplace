@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 export default function CollectionItem() {
     return (
       <Link to="#">
-        <div className='overflow-hidden bg-[#343444] rounded-2xl pb-5'>
+        <div className='collectionItem overflow-hidden bg-[#343444] rounded-2xl pb-5'>
             <div className='card-image flex gap-1 w-full'>
                 <ImgContainer  src={handsCollection} className="w-1/2 object-cover flex-1" />
                 <div className='flex flex-col gap-[inherit] w-1/2 flex-1'>
