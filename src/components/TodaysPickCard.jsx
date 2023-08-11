@@ -5,14 +5,11 @@ import { HiOutlineHeart, HiHeart } from 'react-icons/hi2'
 import handsVert from "../assets/handsHorizontal.png"
 import { Icon } from '../ui/Icon'
 import profile from "../assets/profile.png"
-//import {v4 as uuidv4 } from 'uuid';
+
 export default function TodaysPickCard({detail}) {
 
     const [like,setLike] = useState(0)
     const [isTouch,setIsTouch] = useState(false)
-
-    //const key = uuidv4()
-
 
     return (
         <div className='todaysPickCard flex flex-col max-[520px]:w-3/4'>
@@ -22,7 +19,7 @@ export default function TodaysPickCard({detail}) {
                         
                         !isTouch ? setLike(like => like+1) : setLike(like => like-1)
                         setIsTouch(isTouch => !isTouch)}} 
-                        className='likes absolute right-5 top-4 flex gap-0.5 bg-black rounded-full px-2 items-center 4xl:text-lg 4xl:px-3 cursor-pointer'
+                        className='likes absolute right-5 top-4 flex gap-0.5 bg-black rounded-full px-2 items-center 4xl:text-lg 4xl:px-3 cursor-pointer hover:bg-gray-800'
                         
                         >
 
@@ -63,12 +60,12 @@ export default function TodaysPickCard({detail}) {
                         {
                             detail &&
                             <div className=' flex justify-between flex-wrap'>
-                                <Link to="#" className='flex gap-2 items-center border border-purple-600 px-[10px] py-2 rounded-full w-max '>
+                                <Link to="#" className='flex gap-2 items-center border border-purple-600 px-[10px] py-2 rounded-full w-max hover:text-slate-300 hover:border-purple-900 '>
                                     <Icon name="Lock" />
                                     Place Bid
                                 </Link>
-                                <Link to="#" className='flex gap-2 items-center px-[10px] py-2 rounded-full w-max'>
-                                    <Icon name="Recycle" />
+                                <Link to="#" className='flex gap-2 items-center px-[10px] py-2 rounded-full w-max hover:text-slate-300'>
+                                    <Icon fill="#fff"  name="Recycle" />
                                     View History
                                 </Link>
                             </div>

@@ -227,7 +227,7 @@ export const Lock = ({ size, className }) => {
     </svg>
   );
 };
-export const Recycle = ({ size, className }) => {
+export const Recycle = ({ size, className}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +245,7 @@ export const Recycle = ({ size, className }) => {
   );
 };
 
-const Icon = ({ name, size = 24, className }) => {
+const Icon = ({ name, size = 24, className}) => {
   const icons = {
     Apple,
     Fire,

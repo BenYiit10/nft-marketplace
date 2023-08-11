@@ -20,7 +20,7 @@ export default function AuctionCard() {
                     
                     !isTouch ? setLike(like => like+1) : setLike(like => like-1)
                     setIsTouch(isTouch => !isTouch)}} 
-                    className='likes absolute right-5 top-4 flex gap-0.5 bg-black rounded-full px-2 items-center 4xl:text-lg 4xl:px-3 cursor-pointer'
+                    className='likes absolute right-5 top-4 flex gap-0.5 bg-black rounded-full px-2 items-center 4xl:text-lg 4xl:px-3 cursor-pointer hover:bg-gray-800'
                     
                     >
 

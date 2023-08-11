@@ -17,7 +17,7 @@ export default function SectionTitle({title, more, tab, tabText}) {
         {
           more && 
           <Link to="#">
-            <p className='text-purple-600 max-xs:text-sm 2xl:text-lg 5xl:text-xl' >Explore More</p>        
+            <p className='text-purple-600 max-xs:text-sm 2xl:text-lg 5xl:text-xl hover:text-purple-800' >Explore More</p>        
           </Link>
         } 
 

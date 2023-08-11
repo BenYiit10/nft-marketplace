@@ -5,7 +5,7 @@ import bubbles from "../assets/bubbles.png";
 import bitcoin from "../assets/bitcoin.png";
 import hands from "../assets/hands.png";
 import nft from "../assets/nft.png";
-import HeaderImgContainer from "./HeaderImgContainer"
+import HeroImgContainer from "./HeroImgContainer"
 import ImgContainer from "../ui/ImgContainer"
 
 export default function HeroSection({className}) {
@@ -29,25 +29,25 @@ export default function HeroSection({className}) {
                     </div>
                     
                     
-                    <img src={bubbles} alt="bubbles_pattern" className='absolute -top-12 -left-20 max-w-fit z-0 4xl:scale-110 max-lg:rotate-180'/>
+                    <img src={bubbles} alt="bubbles_pattern" className='absolute -top-12 -left-20 max-w-fit z-0 4xl:scale-110 max-lg:rotate-180 transition-[1s]'/>
 
                 </article>
                 <figure className='absolute right-0 top-0 flex gap-[62px] translate-x-[54%] -translate-y-[35%] z-[10] w-max max-md:rotate-[80deg] max-md:translate-x-1/3 max-md:translate-y-[20%]' >
-                    <HeaderImgContainer>
+                    <HeroImgContainer>
                         <ImgContainer src={hands} />
                         <ImgContainer src={nft} />
                         <ImgContainer src={bitcoin} />
-                    </HeaderImgContainer>
-                    <HeaderImgContainer>
+                    </HeroImgContainer>
+                    <HeroImgContainer>
                         <ImgContainer src={bitcoin} />
                         <ImgContainer src={hands} />
                         <ImgContainer src={nft} />
-                    </HeaderImgContainer>
-                    <HeaderImgContainer>
+                    </HeroImgContainer>
+                    <HeroImgContainer>
                         <ImgContainer src={hands} />
                         <ImgContainer src={nft} />
                         <ImgContainer src={bitcoin} />
-                    </HeaderImgContainer>
+                    </HeroImgContainer>
                 </figure>
             </div>
         </section>
