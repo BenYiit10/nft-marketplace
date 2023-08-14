@@ -15,7 +15,7 @@ export default function HeroSection({className}) {
             <div className="relative flex page-container ">
                 <article className='w-3/5 font-semibold flex flex-col gap-4 relative max-md:w-full'>
                     <p className='relative z-20 4xl:text-lg 2xl:text-[17px] lg:text-sm'>NFT  MARKETPLACE</p>
-                    <h2 className='text-5xl 1-5xl:text-5xl font-bold font-rubik relative z-20 4xl:text-7xl 2xl:text-6xl lg:text-4xl max-md:hyphens-auto '>
+                    <h2 className='text-5xl 1-5xl:text-5xl font-bold font-rubik relative z-20 4xl:text-7xl 2xl:text-6xl lg:text-4xl max-md:hyphens-auto'>
                         Discover, find and sell extraordinary monster NFTs
                     </h2>
                     <p className='relative z-20 4xl:text-lg 2xl:text-[17px] lg:text-sm'>

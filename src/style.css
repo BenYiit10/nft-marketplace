@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .page-container {
   width: 80%;
   margin: auto;
@@ -90,4 +91,45 @@ button, a, select {
 }
 .todaysPickTab::-webkit-scrollbar-thumb:hover {
   background: rgb(126, 42, 204);
+}
+
+input[type=checkbox] {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid white;
+  overflow: hidden;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+}
+input[type=checkbox]:checked {
+  border-color: hsl(209, 100%, 36.5%);
+}
+input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+input[type=checkbox]:checked::before {
+  background-color: hsl(209, 100%, 36.5%);
+}
+input[type=checkbox]:checked:after {
+  content: "✔";
+  font-size: 11px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 55%;
+}
+
+.chooseForm {
+  margin-top: 1.5rem;
+}
+.chooseForm:first-child {
+  margin-top: 0;
+}
+.chooseForm:last-child {
+  border: 0;
 }/*# sourceMappingURL=style.css.map */

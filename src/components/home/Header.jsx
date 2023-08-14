@@ -43,7 +43,7 @@ export default function Header() {
 
     return (
         <header className={`py-8 bg-[#14141F] ${isAbsolute && "absolute w-full bg-transparent z-50"}`}>
-        <div className="px-[85px] max-[1280px]:px-[42px] max-[1024px]:px-[30px] flex justify-between items-center gap-4 max-lg:gap-2 ">
+        <div className="px-[85px] max-mdd:px-4 max-[1280px]:px-[42px] max-[1024px]:px-[30px] flex justify-between items-center gap-4 max-lg:gap-2 ">
             <div className="header-start flex gap-4 max-[1440px]:gap-6 max-[1300px]:gap-4 items-center w-2/5 max-[1200px]:w-2/6 max-lg:justify-between max-lg:w-full">
             <Link
                 to="/"
