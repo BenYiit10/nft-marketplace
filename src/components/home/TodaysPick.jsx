@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "../../ui/SectionTitle";
 import TodaysPickTab from "./TodaysPickTab";
-import { Squares, SortMenuIcon } from "../../ui/Icon";
+import { Squares, SortMenuIcon, Dollars, Lightning, Cube } from "../../ui/Icon";
 import TodaysPickCard from "./TodaysPickCard";
 import TodaysPickTabIndexTabContainer from "./TodaysPickTabIndexTabContainer";
 import TodaysPickContainer from "./TodaysPickContainer";
@@ -29,36 +29,36 @@ export default function TodaysPick() {
                     <TodaysPickTab
                     content={[
                         {
-                        title: "Category",
+                        title: "Price range",
                         index: 1,
                         },
                     ]}
-                    icon={<Squares />}
+                    icon={<Dollars />}
                     />
                     <TodaysPickTab
                     content={[
                         {
-                        title: "Category",
+                        title: "Sale type",
                         index: 2,
                         },
                     ]}
-                    icon={<Squares />}
+                    icon={<Lightning />}
                     />
                     <TodaysPickTab
                     content={[
                         {
-                        title: "Category",
+                        title: "Blockchain",
                         index: 3,
                         },
                     ]}
-                    icon={<Squares />}
+                    icon={<Cube />}
                     />
                 </div>
                 <div className="sort relative flex items-center gap-4 border border-1 border-purple-600 rounded-full px-4 py-[5px] font-semibold cursor-pointer">
                     <SortMenuIcon />
                     <select className="cursor-pointer select-none bg-transparent appearance-none outline-none w-max  ">
-                        <option className="bg-[#1d1d37]"  selected>Sort By: Recently Added</option>
-                        <option className="bg-[#1d1d37]">Sort By: Recently Added</option>
+                        <option className="bg-[#1d1d37]" value="0" >Sort By: Recently Added</option>
+                        <option className="bg-[#1d1d37] " value="1" >Sort By: Recently Added</option>
                     </select>
                 </div>
             </div>
@@ -123,9 +123,9 @@ export default function TodaysPick() {
             </TodaysPickTabIndexTabContainer>
 
             <div className="flex justify-center mt-8">
-            <Link to="#" className="w-max border rounded-full px-11 py-2 text-xs hover:text-slate-300 hover:border-slate-300">
-                Load More
-            </Link>
+                <Link to="/explore" className="w-max border rounded-full px-11 py-2 text-xs hover:text-slate-300 hover:border-slate-300">
+                    Load More
+                </Link>
             </div>
         </div>
         </section>

@@ -42,7 +42,7 @@ export default function TodaysPickCard({detail}) {
                     </div>
 
                     <div className='card-detail grid gap-4 text-xs 2xl:text-sm 4xl:text-base 5xl:text-lg items-center'>
-                        <div className='grid gap-4'>
+                        <div className='grid gap-4 items-center'>
                             <div className='card-profile w-max'>
                                 <ImgContainer src={profile} className="w-11 h-11 4xl:w-14 4xl:h-14" />
                             </div>
@@ -59,7 +59,7 @@ export default function TodaysPickCard({detail}) {
                         </div>
                         {
                             detail &&
-                            <div className=' flex justify-between flex-wrap'>
+                            <div className=' flex justify-between flex-wrap gap-y-4'>
                                 <Link to="#" className='flex gap-2 items-center border border-purple-600 px-[10px] py-2 rounded-full w-max hover:text-slate-300 hover:border-purple-900 '>
                                     <Icon name="Lock" />
                                     Place Bid

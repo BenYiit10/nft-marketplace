@@ -5,14 +5,18 @@ import { HiOutlineHeart, HiHeart } from 'react-icons/hi2'
 import handsVert from "../../assets/handsHorizontal.png"
 import { Icon } from '../../ui/Icon'
 import profile from "../../assets/profile.png"
+import { twMerge } from 'tailwind-merge'
 
-export default function TodaysPickCard({detail}) {
+export default function ExploreCard({detail, className}) {
 
     const [like,setLike] = useState(0)
     const [isTouch,setIsTouch] = useState(false)
 
+
+
     return (
-        <div className='todaysPickCard flex flex-col max-[520px]:w-3/4'>
+        <div className={twMerge('todaysPickCard flex flex-col max-[520px]:w-3/4',className)} >
+            
                 <div className='card-image relative'>
                     <ImgContainer src={handsVert} className="w-full" />
                     <button onClick={() =>  {
@@ -41,25 +45,25 @@ export default function TodaysPickCard({detail}) {
                         </p>
                     </div>
 
-                    <div className='card-detail grid gap-4 text-xs 2xl:text-sm 4xl:text-base 5xl:text-lg items-center'>
-                        <div className='grid gap-4'>
+                    <div className='card-detail grid gap-4 text-xs 2xl:text-sm 4xl:text-base 5xl:text-lg items-center '>
+                        <div className='grid gap-4 items-center max-xxs:justify-items-center'>
                             <div className='card-profile w-max'>
                                 <ImgContainer src={profile} className="w-11 h-11 4xl:w-14 4xl:h-14" />
                             </div>
-                            <div className='grid grid-cols-2 justify-between w-full items-center'>
+                            <div className='grid grid-cols-2 gap-1 justify-between w-full items-center'>
                                 <div className='card-name grid gap-2'>
                                     <p className='self-start'>Creator</p>
                                     <p className='font-semibold'>Lolla Smith</p>
                                 </div>
                                 <div className='card-name grid gap-2 justify-end'>
-                                    <p>Current Bid</p>
+                                    <p className='w-max'>Current Bid</p>
                                     <p className='text-base 2xl:text-lg 4xl:text-xl 5xl:text-2xl font-semibold'>4.89ETH</p>
                                 </div>
                             </div>
                         </div>
                         {
                             detail &&
-                            <div className=' flex justify-between flex-wrap'>
+                            <div className=' flex justify-between flex-wrap gap-y-4 max-xxs:justify-center'>
                                 <Link to="#" className='flex gap-2 items-center border px-[10px] py-2 rounded-full w-max hover:text-slate-300 hover:border-slate-300 '>
                                     <Icon name="Lock" />
                                     Place Bid

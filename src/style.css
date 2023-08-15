@@ -57,6 +57,12 @@ button, a, select {
   @apply h-full;
 }
 
+@media (max-width: 339px) {
+  .exploreSection .todaysPickCard .card-content .card-detail > div:first-child {
+    grid-template-columns: 1fr;
+  }
+}
+
 .seller {
   grid-template-columns: auto 1fr;
 }
@@ -132,4 +138,14 @@ input[type=checkbox]:checked:after {
 }
 .chooseForm:last-child {
   border: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* .exploreSection aside {
+    min-width: 170px;
+    max-width: 170px;
+
+    @media (max-width:1280px) {
+        min-width: 170px;
+        max-width: 170px;
+    }
+} *//*# sourceMappingURL=style.css.map */
