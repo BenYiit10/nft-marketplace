@@ -7,6 +7,8 @@ import Auction from './pages/Auction';
 import Layout from './components/Layout';
 import { useDispatch } from 'react-redux';
 import { setSelectBorder } from './redux/reducer';
+import Activity from './pages/Activity';
+import Blog from './pages/Blog';
 
 
 
@@ -28,6 +30,9 @@ function App() {
                 <Route path="/" element={<Home/>}  /> 
                 <Route path="/explore" element={<Explore/>}  /> 
                 <Route path="/auction" element={<Auction/>}  /> 
+                <Route path="/activity" element={<Activity/>}  /> 
+                <Route path="/blog" element={<Blog/>}  /> 
+                {/* <Route path="*" element={<NotFound />}  /> */} 
             </Routes>
         </Layout>
     </>

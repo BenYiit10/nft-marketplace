@@ -61,12 +61,19 @@ button,a,select{
             grid-template-columns:auto 1fr;
         }
     }
-
-    .card-name {
     
+    .card-name {
+        
         @apply
         h-full
     }
+}
+
+.blogCard .card-detail {
+    grid-template-columns:auto 1fr;
+}
+.blogCard .blogTitle {
+    grid-template-rows:1fr auto;
 }
 
 .exploreSection .todaysPickCard .card-content {
@@ -129,7 +136,7 @@ footer {
       }
 }
 
-input[type=checkbox] {
+.chooseForm input[type=checkbox] {
     position: relative;
     appearance: none;
     border: 1px solid white;
@@ -161,7 +168,7 @@ input[type=checkbox] {
     }
 }
 
-.chooseForm {
+.exploreSection .chooseForm,.activitySection .chooseForm {
     
     margin-top: 1.5rem;
     
@@ -173,12 +180,9 @@ input[type=checkbox] {
     }
 }
 
-/* .exploreSection aside {
-    min-width: 170px;
-    max-width: 170px;
-    
-    @media (max-width:1280px) {
-        min-width: 170px;
-        max-width: 170px;
-    }
-} */
+.chooseForm input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    border-color: rgb(209 213 219 / 0.9);
+    border-radius: 5px;
+}

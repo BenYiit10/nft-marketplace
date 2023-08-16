@@ -57,6 +57,14 @@ button, a, select {
   @apply h-full;
 }
 
+.blogCard .card-detail {
+  grid-template-columns: auto 1fr;
+}
+
+.blogCard .blogTitle {
+  grid-template-rows: 1fr auto;
+}
+
 @media (max-width: 339px) {
   .exploreSection .todaysPickCard .card-content .card-detail > div:first-child {
     grid-template-columns: 1fr;
@@ -99,7 +107,7 @@ button, a, select {
   background: rgb(126, 42, 204);
 }
 
-input[type=checkbox] {
+.chooseForm input[type=checkbox] {
   position: relative;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -110,18 +118,18 @@ input[type=checkbox] {
   height: 15px;
   border-radius: 2px;
 }
-input[type=checkbox]:checked {
+.chooseForm input[type=checkbox]:checked {
   border-color: hsl(209, 100%, 36.5%);
 }
-input[type=checkbox]::before {
+.chooseForm input[type=checkbox]::before {
   content: "";
   position: absolute;
   inset: 0;
 }
-input[type=checkbox]:checked::before {
+.chooseForm input[type=checkbox]:checked::before {
   background-color: hsl(209, 100%, 36.5%);
 }
-input[type=checkbox]:checked:after {
+.chooseForm input[type=checkbox]:checked:after {
   content: "✔";
   font-size: 11px;
   position: absolute;
@@ -130,22 +138,19 @@ input[type=checkbox]:checked:after {
   top: 55%;
 }
 
-.chooseForm {
+.exploreSection .chooseForm, .activitySection .chooseForm {
   margin-top: 1.5rem;
 }
-.chooseForm:first-child {
+.exploreSection .chooseForm:first-child, .activitySection .chooseForm:first-child {
   margin-top: 0;
 }
-.chooseForm:last-child {
+.exploreSection .chooseForm:last-child, .activitySection .chooseForm:last-child {
   border: 0;
 }
 
-/* .exploreSection aside {
-    min-width: 170px;
-    max-width: 170px;
-
-    @media (max-width:1280px) {
-        min-width: 170px;
-        max-width: 170px;
-    }
-} *//*# sourceMappingURL=style.css.map */
+.chooseForm input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  border-color: rgba(209, 213, 219, 0.9);
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */

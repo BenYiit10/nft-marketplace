@@ -101,10 +101,10 @@ export default function Footer() {
                 </strong>
             </p>
             <div className="grid gap-8">
-                <form className="flex justify-between rounded-md overflow-hidden bg-white gap-1 h-fit">
+                <form className="flex justify-between rounded-md overflow-hidden bg-[#F3F3F3] gap-1 h-fit">
                 <input
                     type="text"
-                    className="text-xs 3xl:text-sm 4xl:text-base 5xl:text-lg w-full text-slate-500 outline-0 pl-2"
+                    className="bg-transparent text-xs 3xl:text-sm 4xl:text-base 5xl:text-lg w-full text-slate-500 outline-0 pl-2"
                 />
                 <button className="bg-purple-600 hover:bg-purple-900 py-2 px-3">
                     <Send strokeWidth="0.2" />

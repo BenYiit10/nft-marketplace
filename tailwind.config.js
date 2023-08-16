@@ -25,7 +25,10 @@ module.exports = {
       },
       fontFamily:{
         rubik:"Rubik"
-      }
+      },
+      backgroundImage: {
+        'gradient-62': 'linear-gradient(62deg, var(--tw-gradient-stops))'
+      },
     },
   },
   plugins: [],

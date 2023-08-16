@@ -8,13 +8,17 @@ export default function Header() {
     const [dropdown, setDropdown] = useState(false);
     const [activeDropdownIdx, setActiveDropdownIdx] = useState();
 
-    const [isAbsolute, setIsAbsolute] = useState(false);
+    const [isAbsolute, setIsAbsolute] = useState("block");
     const location = useLocation();
     useEffect(() => {
-        if (location.pathname !== "/") {
-            setIsAbsolute(true);
-        } else {
-            setIsAbsolute(false);
+        if (location.pathname.toLowerCase() === "/explore" || location.pathname.toLowerCase() === "/auctions") {
+            setIsAbsolute("absolute");
+        } 
+        else if (location.pathname !== "/") {
+            setIsAbsolute("gradient");
+        } 
+        else {
+            setIsAbsolute("block");
         }
     }, [location]);
 
@@ -44,9 +48,14 @@ export default function Header() {
     return (
         <header
         /* bg-gradient-to-[62deg] from-[#1A3E92] to-[#661B88] gradient olacak */ 
-            className={`py-8 bg-[#14141F] ${
-                isAbsolute && "absolute w-full bg-transparent z-50"
-            }`}
+            className={`py-8 bg-[#14141F] 
+                ${
+                isAbsolute === "absolute" && "absolute w-full bg-transparent z-50"
+            }
+                ${
+                isAbsolute === "gradient" && "absolute w-full bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50"
+            }   
+                `}
         >
             <div className="px-[85px] max-mdd:px-4 max-[1280px]:px-[42px] max-[1024px]:px-[30px] flex justify-between items-center gap-4 max-lg:gap-2 ">
                 <div className="header-start flex gap-4 max-[1440px]:gap-6 max-[1300px]:gap-4 items-center w-2/5 max-[1200px]:w-2/6 max-lg:justify-between max-lg:w-full">
