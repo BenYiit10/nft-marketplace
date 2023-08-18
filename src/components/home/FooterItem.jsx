@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function FooterItem({title,content}) {
     return (
-        <div className='flex flex-col gap-6'>
+        <div className='footerItem flex flex-col gap-6'>
             <p className='font-semibold 3xl:text-lg 4xl:text-xl 5xl:text-2xl'>
                 {title}
             </p>

@@ -14,6 +14,9 @@ export default function Header() {
         if (location.pathname.toLowerCase() === "/explore" || location.pathname.toLowerCase() === "/auctions") {
             setIsAbsolute("absolute");
         } 
+        else if (location.pathname === "/blogdetail") {
+            setIsAbsolute("block gradient");
+        }
         else if (location.pathname !== "/") {
             setIsAbsolute("gradient");
         } 
@@ -54,6 +57,9 @@ export default function Header() {
             }
                 ${
                 isAbsolute === "gradient" && "absolute w-full bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50"
+            }   
+                ${
+                isAbsolute === "block gradient" && "block w-full bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50"
             }   
                 `}
         >

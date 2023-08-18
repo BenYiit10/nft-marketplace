@@ -9,6 +9,9 @@ import { useDispatch } from 'react-redux';
 import { setSelectBorder } from './redux/reducer';
 import Activity from './pages/Activity';
 import Blog from './pages/Blog';
+import BlogDetailSection from './components/blog/BlogDetail/BlogDetailSection';
+import NotFound from './pages/NotFound';
+import Faq from './pages/Faq';
 
 
 
@@ -32,7 +35,9 @@ function App() {
                 <Route path="/auction" element={<Auction/>}  /> 
                 <Route path="/activity" element={<Activity/>}  /> 
                 <Route path="/blog" element={<Blog/>}  /> 
-                {/* <Route path="*" element={<NotFound />}  /> */} 
+                <Route path="/blogdetail" element={<BlogDetailSection/>}  /> 
+                <Route path="/faq" element={<Faq />}  /> 
+                <Route path="*" element={<NotFound />}  /> 
             </Routes>
         </Layout>
     </>
