@@ -7,7 +7,7 @@ import chess from "../../assets/chess.png"
 import ellipse from "../../assets/ellipse.png"
 import mid from "../../assets/midOne.png"
 import smallest from "../../assets/smallest.png"
-import PageTitle from '../../ui/PageTitle'
+import PageBannerTitle from '../../ui/PageBannerTitle'
 
 export default function Banner() {
     return (
@@ -16,7 +16,7 @@ export default function Banner() {
                 <ImgContainer src={bannerExplore} className="w-full h-full object-cover" />
                 <div className='page-container absolute z-20 -translate-x-1/2 -translate-y-1/2 left-1/2 top-[58%] flex flex-col gap-4'>
                     <div className=''>
-                        <PageTitle className="text-5xl 1-5xl:text-5xl font-rubik relative z-20 4xl:text-7xl 2xl:text-6xl lg:text-4xl max-md:hyphens-auto" title="Explore the best NFTs" />
+                        <PageBannerTitle className="text-5xl 1-5xl:text-5xl font-rubik relative z-20 4xl:text-7xl 2xl:text-6xl lg:text-4xl max-md:hyphens-auto" title="Explore the best NFTs" />
                         <ImgContainer src={big} className="absolute translate-y-1/2 top-full -left-5 z-[-1] max-sm:right-1/4 max-sm:left-auto" />
                         <ImgContainer src={mid} className="absolute -translate-y-1/2 top-0 translate-x-1/2 left-[13%] z-[-1]" />
                     </div>

@@ -12,6 +12,9 @@ import Blog from './pages/Blog';
 import BlogDetailSection from './components/blog/BlogDetail/BlogDetailSection';
 import NotFound from './pages/NotFound';
 import Faq from './pages/Faq';
+import Help from './pages/Help';
+import Contact from './pages/Contact';
+import ItemDetail from './pages/ItemDetail';
 
 
 
@@ -37,6 +40,9 @@ function App() {
                 <Route path="/blog" element={<Blog/>}  /> 
                 <Route path="/blogdetail" element={<BlogDetailSection/>}  /> 
                 <Route path="/faq" element={<Faq />}  /> 
+                <Route path="/help" element={<Help />}  /> 
+                <Route path="/contact" element={<Contact />}  /> 
+                <Route path="/itemdetail" element={<ItemDetail />}  /> 
                 <Route path="*" element={<NotFound />}  /> 
             </Routes>
         </Layout>

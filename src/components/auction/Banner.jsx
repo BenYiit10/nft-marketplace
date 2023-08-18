@@ -11,7 +11,7 @@ import smallestCoin from "../../assets/smallestCoin.png"
 // import mid from "../../assets/"
 // import smallest from "../../assets/"
 import bannerExplore from "../../assets/bannerExplore.png"
-import PageTitle from '../../ui/PageTitle'
+import PageBannerTitle from '../../ui/PageBannerTitle'
 
 export default function Banner() {
     return (
@@ -20,7 +20,7 @@ export default function Banner() {
                 <ImgContainer src={bannerExplore} className="w-full h-full object-cover" />
                 <div className='page-container absolute z-20 -translate-x-1/2 -translate-y-1/2 left-1/2 top-[58%] flex flex-col gap-4'>
                     <div className=''>
-                        <PageTitle className="text-5xl 1-5xl:text-5xl font-rubik relative z-20 4xl:text-7xl 2xl:text-6xl lg:text-4xl max-md:hyphens-auto" title="Auction" />
+                        <PageBannerTitle className="text-5xl 1-5xl:text-5xl font-rubik relative z-20 4xl:text-7xl 2xl:text-6xl lg:text-4xl max-md:hyphens-auto" title="Auction" />
                     </div>
                     <p className="relative z-20 4xl:text-lg 2xl:text-[17px] lg:text-sm">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.

@@ -11,16 +11,20 @@ export default function Header() {
     const [isAbsolute, setIsAbsolute] = useState("block");
     const location = useLocation();
     useEffect(() => {
-        if (location.pathname.toLowerCase() === "/explore" || location.pathname.toLowerCase() === "/auctions") {
+        if (
+            location.pathname.toLowerCase() === "/explore" ||
+            location.pathname.toLowerCase() === "/auctions"
+        ) {
             setIsAbsolute("absolute");
-        } 
-        else if (location.pathname === "/blogdetail") {
+        } else if ( 
+            location.pathname === "/blogdetail" ||
+            location.pathname === "/help" ||
+            location.pathname === "/itemdetail"
+        ) {
             setIsAbsolute("block gradient");
-        }
-        else if (location.pathname !== "/") {
+        } else if (location.pathname !== "/") {
             setIsAbsolute("gradient");
-        } 
-        else {
+        } else {
             setIsAbsolute("block");
         }
     }, [location]);
@@ -50,20 +54,23 @@ export default function Header() {
 
     return (
         <header
-        /* bg-gradient-to-[62deg] from-[#1A3E92] to-[#661B88] gradient olacak */ 
+            /* bg-gradient-to-[62deg] from-[#1A3E92] to-[#661B88] gradient olacak */
             className={`py-8 bg-[#14141F] 
                 ${
-                isAbsolute === "absolute" && "absolute w-full bg-transparent z-50"
-            }
+                    isAbsolute === "absolute" &&
+                    "absolute w-full bg-transparent z-50"
+                }
                 ${
-                isAbsolute === "gradient" && "absolute w-full bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50"
-            }   
+                    isAbsolute === "gradient" &&
+                    "absolute w-full bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50"
+                }   
                 ${
-                isAbsolute === "block gradient" && "block w-full bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50"
-            }   
+                    isAbsolute === "block gradient" &&
+                    "block w-full bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50 mb-20"
+                }   
                 `}
         >
-            <div className="px-[85px] max-mdd:px-4 max-[1280px]:px-[42px] max-[1024px]:px-[30px] flex justify-between items-center gap-4 max-lg:gap-2 ">
+            <div className="px-[85px] max-mdd:px-4 max-xs:px-2 max-[1280px]:px-[42px] max-[1024px]:px-[30px] flex justify-between items-center gap-4 max-lg:gap-2 ">
                 <div className="header-start flex gap-4 max-[1440px]:gap-6 max-[1300px]:gap-4 items-center w-2/5 max-[1200px]:w-2/6 max-lg:justify-between max-lg:w-full">
                     <Link
                         to="/"
@@ -88,19 +95,17 @@ export default function Header() {
                 </div>
                 <div className="header-end flex items-center gap-10 text-white max-[1440px]:gap-7 max-lg:hidden ">
                     <div className="links flex gap-5 max-[1440px]:gap-4">
-                        {
-                            linksArray.map((data, index) => (
-                                <HeaderLink
-                                    dropdown={data.hasDropdown}
-                                    isDropdownActive={index === activeDropdownIdx}
-                                    setActiveDropdownIdx={setActiveDropdownIdx}
-                                    index={index}
-                                    key={index}
-                                >
-                                    {data.title}
-                                </HeaderLink>
-                            ))
-                        }
+                        {linksArray.map((data, index) => (
+                            <HeaderLink
+                                dropdown={data.hasDropdown}
+                                isDropdownActive={index === activeDropdownIdx}
+                                setActiveDropdownIdx={setActiveDropdownIdx}
+                                index={index}
+                                key={index}
+                            >
+                                {data.title}
+                            </HeaderLink>
+                        ))}
                     </div>
                     <div className="flex gap-6 items-center max-[1440px]:gap-4">
                         <div className="rounded-full bg-[#343444] w-8 h-8 flex justify-center items-center cursor-pointer hover:bg-[#2a2a38]">

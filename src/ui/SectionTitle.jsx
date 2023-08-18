@@ -11,7 +11,7 @@ export default function SectionTitle({title, more, tab, tabText}) {
 
   return (
     <div className='sectionTitle relative flex justify-between items-end gap-4 mb-8'>
-        <h2 className='font-rubik font-bold text-[30px] max-xs:text-[25px] 2xl:text-4xl 5xl:text-5xl '>
+        <h2 className='font-rubik font-bold text-3xl max-xs:text-[25px] 2xl:text-4xl 5xl:text-5xl '>
             {title}
         </h2>
         {
