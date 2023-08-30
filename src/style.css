@@ -40,10 +40,10 @@ button, a, select {
   background-color: #2a2a38;
 }
 
-.auctionCard .card-content .card-detail {
+.auctionCard .card-content .card-detail, .itemDetailSection .card-detail, .detail-card .card-detail {
   grid-template-columns: auto 1fr;
 }
-.auctionCard .card-content .card-name {
+.auctionCard .card-content .card-name, .itemDetailSection .card-name, .detail-card .card-name {
   @apply h-full;
 }
 
@@ -176,4 +176,8 @@ button, a, select {
   .footerItem:nth-child(odd) {
     justify-self: flex-start;
   }
+}
+.itemDetailSection .swiper-slide {
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }/*# sourceMappingURL=style.css.map */

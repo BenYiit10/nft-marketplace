@@ -11,6 +11,8 @@ $urbanist: "Urbanist";
     @media (max-width:768px) {
         width: 95%;
     }
+    // max-width: 1270px;
+    // width: 90%;
     
 }
 
@@ -40,7 +42,7 @@ button,a,select{
     background-color: #2a2a38;
     
 }
-.auctionCard .card-content {
+.auctionCard .card-content, .itemDetailSection, .detail-card {
 
     .card-detail {
         grid-template-columns: auto 1fr;
@@ -205,4 +207,8 @@ footer {
     .footerItem:nth-child(odd) {
         justify-self: flex-start;
     }
+}
+
+.itemDetailSection .swiper-slide {
+    height: fit-content !important;
 }
