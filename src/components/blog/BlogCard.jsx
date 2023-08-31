@@ -35,7 +35,7 @@ export default function BlogCard() {
                         </p>
                     </div>
                     <div className="text-end text-xs 2xl:text-sm 4xl:text-base 5xl:text-lg text-purple-600 mt-2">
-                        <Link to="#">
+                        <Link to="/blogdetail">
                             View Detail
                         </Link>
                     </div>

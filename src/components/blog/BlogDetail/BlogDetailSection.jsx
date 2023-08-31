@@ -182,7 +182,7 @@ export default function BlogDetailSection() {
                             {
                                 ["Bitcoin","NFT","Bids","Digital","Arts","Marketplace"].map((item,index)=> {
                                     return (
-                                        <BlogDetailLink className="text-white bg-transparent border-white" content={item} />
+                                        <BlogDetailLink className="text-white bg-transparent border-white" content={item} key={index} />
                                         )
                                 })
                             }

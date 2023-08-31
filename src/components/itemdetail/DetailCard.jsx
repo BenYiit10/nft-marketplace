@@ -13,7 +13,7 @@ export default function DetailCard() {
                         className="w-11 h-11 4xl:w-14 4xl:h-14"
                     />
                 </div>
-                <div className="grid grid-cols-2 h-full justify-between w-full items-center text-xs">
+                <div className="grid grid-cols-2 h-full justify-between w-full items-center text-xs 3xl:text-sm 4xl:text-base 5xl:text-lg">
                     <div className="card-name flex gap-2">
                         <div className="grid">
                             <p className="font-semibold self-start">Lolla Smith</p>

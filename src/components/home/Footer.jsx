@@ -45,11 +45,11 @@ export default function Footer() {
                         },
                         {
                             title: "Author Profile",
-                            link: "/authorProfile",
+                            link: "/author",
                         },
                         {
                             title: "Create Item",
-                            link: "/createItem",
+                            link: "/create",
                         },
                     ]}
                 />
@@ -66,7 +66,7 @@ export default function Footer() {
                         },
                         {
                             title: "Item Details",
-                            link: "/itemDetails",
+                            link: "/itemdetail",
                         },
                         {
                             title: "Activity",
@@ -83,11 +83,11 @@ export default function Footer() {
                         },
                         {
                             title: "Contact Us",
-                            link: "/contactUs",
+                            link: "/contact",
                         },
                         {
                             title: "Our Blog",
-                            link: "/ourBlog",
+                            link: "/blog",
                         },
                         {
                             title: "FAQ",

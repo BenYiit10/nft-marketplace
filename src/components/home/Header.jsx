@@ -55,18 +55,18 @@ export default function Header() {
     return (
         <header
             /* bg-gradient-to-[62deg] from-[#1A3E92] to-[#661B88] gradient olacak */
-            className={`py-8 bg-[#14141F] 
+            className={`py-8 bg-[#14141F] w-full
                 ${
                     isAbsolute === "absolute" &&
-                    "absolute w-full bg-transparent z-50"
+                    "absolute bg-transparent z-50"
                 }
                 ${
                     isAbsolute === "gradient" &&
-                    "absolute w-full bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50"
+                    "absolute bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50"
                 }   
                 ${
                     isAbsolute === "block gradient" &&
-                    "block w-full bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50 mb-20"
+                    "block bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50 mb-20"
                 }   
                 `}
         >

@@ -16,7 +16,7 @@ export default function DetailTab({ tabText}) {
           {
             tabText.map((item,index) => {
                 return (
-                    <button key={index} onClick={() => dispatch(setClicked(index))} className={`w-full justify-self-center text-xs border-b border-1 pb-2 outline-none
+                    <button key={index} onClick={() => dispatch(setClicked(index))} className={`w-full justify-self-center text-xs 3xl:text-sm 4xl:text-base 5xl:text-lg border-b border-1 pb-2 outline-none
                       ${clicked===index ? "border-purple-600 text-purple-600" : "border-transparent"}
                     `}>
                       {item}
