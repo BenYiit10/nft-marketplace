@@ -8,47 +8,75 @@ export default function Header() {
     const [dropdown, setDropdown] = useState(false);
     const [activeDropdownIdx, setActiveDropdownIdx] = useState();
 
-    const [isAbsolute, setIsAbsolute] = useState("block");
+    const [headerStyle, setHeaderStyle] = useState("block");
     const location = useLocation();
     useEffect(() => {
-        if (
+
+        switch (location.pathname.toLowerCase()) {
+            case "/explore":
+            case "/auctions":
+                setHeaderStyle("absolute");
+                break;
+            case "/blogdetail":
+            case "/help":
+            case "/itemdetail":
+                setHeaderStyle("block gradient");
+                break;
+            case "/":
+                setHeaderStyle("block");
+                break;
+            default:
+                setHeaderStyle("gradient");
+                break;
+        }
+        /* if (
             location.pathname.toLowerCase() === "/explore" ||
             location.pathname.toLowerCase() === "/auctions"
         ) {
-            setIsAbsolute("absolute");
+            setHeaderStyle("absolute");
         } else if ( 
             location.pathname === "/blogdetail" ||
             location.pathname === "/help" ||
             location.pathname === "/itemdetail"
         ) {
-            setIsAbsolute("block gradient");
+            setHeaderStyle("block gradient");
         } else if (location.pathname !== "/") {
-            setIsAbsolute("gradient");
+            setHeaderStyle("gradient");
         } else {
-            setIsAbsolute("block");
-        }
+            setHeaderStyle("block");
+        } */
     }, [location]);
 
     const linksArray = [
         {
             title: "Home",
             hasDropdown: true,
+            link:"",
+            Comp:"p"
         },
         {
             title: "Explore",
             hasDropdown: true,
+            link:"",
+            Comp:"p"
         },
         {
             title: "Pages",
             hasDropdown: true,
+            link:"",
+            Comp:"p"
         },
         {
             title: "Community",
             hasDropdown: true,
+            link:"",
+            Comp:"p"
         },
         {
             title: "Contacts",
             hasDropdown: false,
+            link:"/contact",
+            Comp:Link
         },
     ];
 
@@ -57,15 +85,15 @@ export default function Header() {
             /* bg-gradient-to-[62deg] from-[#1A3E92] to-[#661B88] gradient olacak */
             className={`py-8 bg-[#14141F] w-full
                 ${
-                    isAbsolute === "absolute" &&
+                    headerStyle === "absolute" &&
                     "absolute bg-transparent z-50"
                 }
                 ${
-                    isAbsolute === "gradient" &&
+                    headerStyle === "gradient" &&
                     "absolute bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50"
                 }   
                 ${
-                    isAbsolute === "block gradient" &&
+                    headerStyle === "block gradient" &&
                     "block bg-gradient-62 from-[#1A3E92] to-[#661B88] z-50 mb-20"
                 }   
                 `}
@@ -102,18 +130,26 @@ export default function Header() {
                                 setActiveDropdownIdx={setActiveDropdownIdx}
                                 index={index}
                                 key={index}
+                                link={data.link}
+                                Comp={data.Comp}
                             >
                                 {data.title}
                             </HeaderLink>
                         ))}
                     </div>
                     <div className="flex gap-6 items-center max-[1440px]:gap-4">
-                        <div className="rounded-full bg-[#343444] w-8 h-8 flex justify-center items-center cursor-pointer hover:bg-[#2a2a38]">
+                        <div className="rounded-full bg-[#343444] w-8 h-8 flex justify-center items-center cursor-not-allowed hover:bg-[#2a2a38]">
                             <HiMoon className="text-[19px]" />
                         </div>
                         <Link
                             to="/"
-                            className="wallet px-6 py-4 max-[1440px]:py-3 border border-purple-600 rounded-full cursor-pointer hover:text-slate-300 hover:border-purple-900 max-[1440px]:text-[12px] w-max max-lg:px-5"
+                            className={`wallet px-6 py-4 max-[1440px]:py-3 border border-purple-600 rounded-full cursor-pointer hover:text-slate-300 hover:border-purple-900 max-[1440px]:text-[12px] w-max max-lg:px-5 
+                            ${
+                                headerStyle !== "block" &&
+                                "bg-white border-transparent text-black hover:text-black/80"
+                            }
+                            `
+                        }
                         >
                             Connect Wallet
                         </Link>

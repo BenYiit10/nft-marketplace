@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { HiChevronDown } from "react-icons/hi2";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function HeaderLink({
     children,
@@ -9,9 +9,11 @@ export default function HeaderLink({
     isDropdownActive,
     index,
     setActiveDropdownIdx,
+    link,
+    Comp
 }) {    
   const dropdownToggle = useRef();
-
+    
   //const [isOpen, setIsOpen] = useState(false);
 
   // document.addEventListener("click", e => {
@@ -41,22 +43,28 @@ export default function HeaderLink({
             document.removeEventListener("click",control)
         }
     }) */
-
+    const location = useLocation()
+    useEffect(() => {
+        if (location.pathname === location.pathname) {
+            dropdown = false
+        }
+    },[])
     return (
         <div className="relative">
-        <div
+        <Comp
             className={`relative flex gap-3 max-[1440px]:gap-2 items-center cursor-pointer text-[20px] max-[1530px]:text-[18px] max-[1440px]:text-[16px] max-[1200px]:text-[14px] hover:text-slate-300 select-none ${className}`}
             onClick={() => setActiveDropdownIdx(isDropdownActive ? null : index)}
+            
+            to={!dropdown ? link : undefined}
         >
             {children}
             {dropdown && <HiChevronDown strokeWidth="1" className="text-[16px]" />}
-        </div>
+        </Comp>
         {isDropdownActive && dropdown && (
             <div
             ref={dropdownToggle}
             className="absolute border rounded-lg bg-[#14141F] px-4 py-3 z-20 translate-y-4 shadow-lg max-lg:border-0"
             >
-
                 <ul className="flex flex-col gap-1">
                     <li>
                     <Link to="#">Dropdown</Link>

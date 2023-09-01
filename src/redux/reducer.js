@@ -9,7 +9,7 @@ export const mainReducer = createSlice({
     },
     reducers: {
         setClicked: (state,action) => {state.clicked = action.payload},
-        setSelectBorder: (state,action) => {state.selectBorder = action.payload},
+        setSelectBorder: (state,action) => {state.selectBorder = action.payload}, /* todaysPick ve auctionSection */
         setTodaysPickTabIndex: (state,action) => {state.todaysPickTabIndex = action.payload},
     },
 })

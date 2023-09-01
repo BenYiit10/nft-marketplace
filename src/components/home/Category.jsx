@@ -46,42 +46,42 @@ export default function Category() {
                 
             >
                 <SwiperSlide>
-                    <Link to="#">
+                    <Link to="/explore">
                         <CategoryItem src={nftVert} title="Music" />
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Link to="#">
+                    <Link to="/explore">
                     <CategoryItem src={handsVert} title="Domain Name" />
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Link to="#">
+                    <Link to="/explore">
                     <CategoryItem src={nftVert} title="Music" />
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Link to="#">
+                    <Link to="/explore">
                     <CategoryItem src={bitcoinVert} title="Arts" />
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Link to="#">
+                    <Link to="/explore">
                     <CategoryItem src={nftVert} title="Utility" />
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Link to="#">
+                    <Link to="/explore">
                     <CategoryItem src={nftVert} title="Music" />
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Link to="#">
+                    <Link to="/explore">
                     <CategoryItem src={handsVert} title="zort" />
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Link to="#">
+                    <Link to="/explore">
                     <CategoryItem src={nftVert} title="Music" />
                     </Link>
                 </SwiperSlide>

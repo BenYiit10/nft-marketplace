@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import ImgContainer from '../../ui/ImgContainer'
 import { HiOutlineHeart, HiHeart } from 'react-icons/hi2'
 import handsVert from "../../assets/handsHorizontal.png"
-import { Icon } from '../../ui/Icon'
+import { Icon, Lock } from '../../ui/Icon'
 import profile from "../../assets/profile.png"
 
 export default function TodaysPickCard({detail}) {
@@ -61,7 +61,7 @@ export default function TodaysPickCard({detail}) {
                             detail &&
                             <div className=' flex justify-between flex-wrap gap-y-4'>
                                 <Link to="#" className='flex gap-2 items-center border border-purple-600 px-[10px] py-2 rounded-full w-max hover:text-slate-300 hover:border-purple-900 '>
-                                    <Icon name="Lock" />
+                                    <Lock fill="white"/>
                                     Place Bid
                                 </Link>
                                 <Link to="#" className='flex gap-2 items-center px-[10px] py-2 rounded-full w-max hover:text-slate-300'>

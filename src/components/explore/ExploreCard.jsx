@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import ImgContainer from '../../ui/ImgContainer'
 import { HiOutlineHeart, HiHeart } from 'react-icons/hi2'
 import handsVert from "../../assets/handsHorizontal.png"
-import { Icon } from '../../ui/Icon'
+import { Icon, Lock } from '../../ui/Icon'
 import profile from "../../assets/profile.png"
 import { twMerge } from 'tailwind-merge'
 
@@ -65,7 +65,7 @@ export default function ExploreCard({detail, className}) {
                             detail &&
                             <div className=' flex justify-between flex-wrap gap-y-4 max-xxs:justify-center'>
                                 <Link to="#" className='flex gap-2 items-center border px-[10px] py-2 rounded-full w-max hover:text-slate-300 hover:border-slate-300 '>
-                                    <Icon name="Lock" />
+                                    <Lock fill="white" />
                                     Place Bid
                                 </Link>
                                 <Link to="#" className='flex gap-2 items-center px-[10px] py-2 rounded-full w-max hover:text-slate-300'>

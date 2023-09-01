@@ -19,7 +19,7 @@ export default function DetailCard() {
                             <p className="font-semibold self-start">Lolla Smith</p>
                             <p className="">8 hours ago</p>
                         </div>
-                        <Link to="#">
+                        <Link to="#" className="hover:text-slate-300">
                             place a bid
                         </Link>
                     </div>

@@ -24,8 +24,8 @@ export default function HeroSection({className}) {
                     </p>
 
                     <div className='btn-group flex gap-4 relative z-20 4xl:text-lg 2xl:text-[17px] lg:text-sm max-md:flex-wrap'>
-                        <Button>Create</Button>
-                        <Button>Explore</Button>
+                        <Button link="/" >Create</Button>
+                        <Button link="/explore" >Explore</Button>
                     </div>
                     
                     

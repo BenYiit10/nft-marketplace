@@ -13,7 +13,7 @@ export default function AuctionCard() {
 
   return (
     <div className='auctionCard flex flex-col'>
-        <Link to="#">
+        <Link to="/auction">
             <div className='card-image relative'>
                 <ImgContainer src={handsVert} className="w-full" />
                 <button onClick={() =>  {
@@ -31,7 +31,7 @@ export default function AuctionCard() {
                 </button>
                 <div className='date absolute bottom-6 max-xs:bottom-2 flex items-center justify-center gap-2 rounded-xl -translate-x-1/2 left-1/2 px-8 py-2 text-xs 2xl:text-sm 4xl:text-base 5xl:text-lg bg-[#343444] w-max'>
                     <Icon name="Fire" size={20}/>
-                    02 : 08 : 22 : 34
+                    <time>02 : 08 : 22 : 34</time>
                 </div>
             </div>
             <div className='card-content p-4 max-xs:p-2 bg-[#343444] rounded-b-[20px] grid gap-4'>

@@ -15,6 +15,7 @@ import Faq from './pages/Faq';
 import Help from './pages/Help';
 import Contact from './pages/Contact';
 import ItemDetail from './pages/ItemDetail';
+import { useEffect } from 'react';
 
 
 
@@ -28,6 +29,11 @@ function App() {
     } else {
         dispatch(setSelectBorder(false));
     }
+
+    useEffect(() => {
+        
+        window.scrollTo(0,0)
+    },[location])
 
     return (
     <>
