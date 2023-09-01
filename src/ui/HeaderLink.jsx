@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { HiChevronDown } from "react-icons/hi2";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function HeaderLink({
     children,
@@ -43,12 +43,6 @@ export default function HeaderLink({
             document.removeEventListener("click",control)
         }
     }) */
-    const location = useLocation()
-    useEffect(() => {
-        if (location.pathname === location.pathname) {
-            dropdown = false
-        }
-    },[])
     return (
         <div className="relative">
         <Comp
